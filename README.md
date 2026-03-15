@@ -25,13 +25,14 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+This project is a Streamlit number guessing game where the player tries to guess a secret number within a limited number of attempts. While debugging it, I found that the hint logic was backwards, the game prompt did not always match the difficulty settings, and the New Game flow had state reset issues. To repair it, I moved core logic like `parse_guess` and `check_guess` into `logic_utils.py`, fixed the high/low hint behavior, added pytest tests for winning, too high, and too low guesses, and then verified the fixes in the live Streamlit app.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- ![Winning game screenshot](images/winning-game.png)
+## Pytest Results
+
+- ![Pytest passing screenshot](images/pytest-results.png)
 
 ## 🚀 Stretch Features
 
