@@ -4,9 +4,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+The first time I ran the game, it looked clean and playable, but once I started testing it, several things were clearly broken. One bug I noticed right away was that the difficulty settings did not match the actual game, because the sidebar showed one range and number of attempts while the main game prompt showed something different. Another bug was that the hints were backwards, since the game kept telling me to go higher even when my guesses were already above the secret number. I also found that the game accepted guesses outside the allowed range, like values over 100, instead of rejecting them. Finally, the New Game button did not fully reset the game state, because after losing it still showed the game-over message and would not properly start a fresh round.
 
 ---
 
